@@ -1,0 +1,17 @@
+@mixin generate-colors($color-name) {
+  
+    --pulse-color-base: var(--pulse-color-#{$color-name}-base) !important;
+    --pulse-color-shade: var(--pulse-color-#{$color-name}-shade) !important;
+    --pulse-color-tint: var(--pulse-color-#{$color-name}-tint) !important;
+    --pulse-color-constrast: var(--pulse-color-#{$color-name}-constrast) !important;
+    // background-color: var(--pulse-color-#{$color-name}-base);
+    // color: var(--pulse-color-#{$color-name}-constrast);
+        
+    // --ion-color-base: var(--ion-color-#{$color-name}, #{$base}) !important;
+    // --ion-color-base-rgb: var(--ion-color-#{$color-name}-rgb, #{color-to-rgb-list($base)}) !important;
+    // --ion-color-contrast: var(--ion-color-#{$color-name}-contrast, #{$contrast}) !important;
+    // --ion-color-contrast-rgb: var(--ion-color-#{$color-name}-contrast-rgb, #{color-to-rgb-list($contrast)}) !important;
+    // --ion-color-shade: var(--ion-color-#{$color-name}-shade, #{$shade}) !important;
+    // --ion-color-tint: var(--ion-color-#{$color-name}-tint, #{$tint}) !important;
+  };
+

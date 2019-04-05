@@ -1,0 +1,34 @@
+@import "./normalize";
+@import "./mixins";
+@import "./colors";
+
+//Fuente base para toda la aplicacion
+$font-family-base: var(--pulse-font-primary, inherit) !default;
+
+// Ubicacin de las fuentes
+$font-path: "/dist/fonts" !default;
+
+// The minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries
+$screen-breakpoints: (
+  sm: var(--pulse-sm),
+  md: var(--pulse-md),
+  lg: var(--pulse-lg)
+) !default;
+
+:root{
+  @each $color-name, $value in $colors {
+    --pulse-color-#{$color-name}-base : #{map-get($value, base)};
+    --pulse-color-#{$color-name}-constrast : #{map-get($value, constrast)};
+    --pulse-color-#{$color-name}-tint : #{color-tint($value)};
+    --pulse-color-#{$color-name}-shade : #{color-shade($value)};
+    --pulse-color-#{$color-name}-dark : #{color-dark($value)};
+    --pulse-color-#{$color-name}-grad : #{color-grad($value)};
+  };
+}
+
+@each $color-name, $value in $colors {
+  .pulse-color-#{$color-name} {
+    @include generate-colors($color-name);
+  }
+};

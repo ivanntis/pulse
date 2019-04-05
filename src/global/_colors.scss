@@ -1,0 +1,90 @@
+/*
+    Variables para paleta de colores.
+  */
+  $colors: (
+    primary: (
+        base: #0040A8,
+        constrast: #ffffff,
+        tint: #0074d3,
+        shade: #0074d3,
+        dark: #002c76,
+        grad: linear-gradient(to bottom, #0074d3, #0040A8)
+    ),    
+    warn: (
+        base: #F69B31,
+        constrast: #ffffff,
+        tint: #FDC130,
+        shade: #FDC130,
+        dark: #C27A27,
+        grad: linear-gradient(to bottom, #FDC130, #F69B31)
+    ),
+    gray: (
+        base: rgba(51,51,51,1),
+        constrast: #ffffff        
+    ),
+
+    aqua: (
+        base: #F6F8FA,
+        dark: #D6D6D6,
+        constrast: rgba(51,51,51,1) 
+
+    ),
+
+    error: (
+        base: #E33031,
+        dark: #B02526,
+        constrast: #ffffff
+    ),
+
+    success: (
+        base: #7AD468,
+        dark: #5CA14F,
+        constrast: #ffffff
+    )
+  );
+
+  @function color-tint($color: null){
+    @if(map-get($color, tint)) {
+        @return map-get($color, tint);
+    } @else {
+        @return map-get($color, base);
+    }
+  }
+  
+  @function color-shade($color: null){
+    @if(map-get($color, shade)) {
+        @return map-get($color, shade);
+    } @else {
+        @return rgb(180, 31, 155);
+    }
+  }
+  
+  @function color-dark($color: null){
+    @if(map-get($color, shade)) {
+        @return map-get($color, shade);
+    } @else {
+        @return rgb(180, 31, 155);
+    }
+  }
+
+  @function color-grad($color: null){
+    @if(map-get($color, shade)) {
+        @return map-get($color, shade);
+    } @else {
+        @return linear-gradient(to bottom, rgb(180, 31, 155), rgb(48, 180, 31));
+    }
+  }
+
+
+  @function pulse-color($name, $variation) {
+    $values: map-get($colors, $name);
+    $value: map-get($values, $variation);
+    $variable: --pulse-color-#{$name}-#{$variation};
+  
+    // @if ($variation == base) {
+    //   $variable: --pulse-color-#{$name};
+    // }
+  
+    @return var(#{$variable}, $value);
+  }
+

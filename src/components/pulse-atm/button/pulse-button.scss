@@ -1,0 +1,119 @@
+@import "pulse-button.vars";
+
+:host {
+  font-family: var(--pulse-font-family-principal);
+  font-size: #{$button-font-size};
+  --height: #{$button-height};
+  --min-width: #{$min-width};
+
+  
+  --border-width: initial;
+  --border-color: initial;
+  --border-style: initial;
+  --border-radius: #{$button-border-radius};
+
+  --padding: #{$button-padding};
+  --overflow: hidden;
+
+
+}
+
+:host(.button-disabled) {
+    pointer-events: none;
+}
+
+
+:host(.button-disabled) .button-native {
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
+}
+
+
+// Solidos
+:host(.button-solid) {
+  --background: #{pulse-color(primary, base)};
+  --background-focused: #{pulse-color(primary, shade)};
+  --color: #{pulse-color(primary, constrast)};
+  --color-activated: #{pulse-color(primary, constrast)};
+  --color-focused: #{pulse-color(primary, constrast)};
+}
+
+
+:host(.button-solid.pulse-color) .button-native{
+  background-color:  var(--pulse-color-base);
+  color:  var(--pulse-color-constrast);
+  height: #{$button-height};
+}
+
+// Focused/Activated Solid Button with Color
+:host(.button-solid.ion-color.pulse-focused) .button-native {
+  background: var(--pulse-color-shade);
+  color:  var(--color-focused);
+
+}
+
+// Outline
+:host(.button-outline) {
+  --border-color: #{pulse-color(primary, base)};
+  --background: transparent;
+  --color: #{pulse-color(primary, base)};
+  --color-focused: #{pulse-color(primary, base)};
+  --border-width: 1px;
+  --border-color:  #{pulse-color(primary, base)};
+  --border-style: solid;
+}
+
+:host(.button-outline.pulse-color) .button-native {
+  border-color: var(--pulse-color-base);
+  background: transparent;
+  color: var(--pulse-color-base);
+  height: #{$button-height};
+
+}
+
+:host(.button-outline.pulse-focused.ion-color) .button-native {
+  background: var(--pulse-color-tint);
+  color: var(--pulse-color-tint);
+}
+
+
+// Clear
+
+:host(.button-clear) {
+  --background: transparent;
+  --color: #{pulse-color(primary, base)};
+  --color-focused: #{pulse-color(primary, base)};
+
+}
+
+:host(.button-clear.pulse-color) .button-native {
+  border-color: #{$button-clear-border};
+  background: transparent;
+  color: var(--pulse-color-base);
+  height: #{$button-height};
+
+}
+
+:host(.button-clear.pulse-focused.ion-color) .button-native {
+  background: var(--pulse-color-tint);
+  color: var(--pulse-color-tint);
+}
+
+
+//Componente real
+
+.button-native {
+  background: var(--background);
+  color: var(--color);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+
+  padding: var(--padding);
+  min-width: var(--min-width);
+  height: var(--height);
+}
+
+
