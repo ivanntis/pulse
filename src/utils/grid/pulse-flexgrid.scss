@@ -1,0 +1,20 @@
+@mixin generate-columns($breakpoins) {
+
+    @each $breakpoint-name, $value in $breakpoins {
+      $tst: map-get($screen-breakpoints, sm);
+      width: #{$breakpoint-name};
+      $dividendo: 12;
+      @for $i from 1 through 12 {
+        $width: percentage(1 / $dividendo)*$i;    
+        > .col-#{$breakpoint-name}-#{$i} {
+            width: $width;
+            flex-basis: $width;
+        }
+      }
+    }; 
+  
+  };
+  
+  .pulse-grid {
+    @include generate-columns($screen-breakpoints);
+  }
