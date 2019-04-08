@@ -8,13 +8,6 @@ $font-family-base: var(--pulse-font-primary, inherit) !default;
 // Ubicacin de las fuentes
 $font-path: "/dist/fonts" !default;
 
-// The minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries
-$screen-breakpoints: (
-  sm: var(--pulse-sm),
-  md: var(--pulse-md),
-  lg: var(--pulse-lg)
-) !default;
 
 :root{
   @each $color-name, $value in $colors {

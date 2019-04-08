@@ -1,3 +1,0 @@
-@custom-media --breakpoint-not-small screen and (min-width: var(--pulse-sm));
-@custom-media --breakpoint-medium screen and (min-width: --pulse-sm) and (max-width: var(--pulse-md));
-@custom-media --breakpoint-large screen and (min-width: var(--pulse-md));
