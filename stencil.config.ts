@@ -4,7 +4,7 @@ import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'Pulse',
   bundles: [
-    { components: ['pulse-button','pulse-flowtt'] }
+    { components: ['pulse-button','pulse-flowtt', 'pulse-flowtm'] }
   ],
   outputTargets:[
     { type: 'dist' },
@@ -22,8 +22,6 @@ export const config: Config = {
         'src/global/_typography.scss',
         'src/global/settings.scss',
         'src/utils/grid/pulse-flexgrid.scss',
-
-
       ]
     })
   ]

@@ -31,6 +31,9 @@ export namespace Components {
     'type'?: 'submit' | 'reset' | 'button';
   }
 
+  interface PulseFlowtm {}
+  interface PulseFlowtmAttributes extends StencilHTMLAttributes {}
+
   interface PulseFlowtt {}
   interface PulseFlowttAttributes extends StencilHTMLAttributes {}
 }
@@ -38,11 +41,13 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'PulseButton': Components.PulseButton;
+    'PulseFlowtm': Components.PulseFlowtm;
     'PulseFlowtt': Components.PulseFlowtt;
   }
 
   interface StencilIntrinsicElements {
     'pulse-button': Components.PulseButtonAttributes;
+    'pulse-flowtm': Components.PulseFlowtmAttributes;
     'pulse-flowtt': Components.PulseFlowttAttributes;
   }
 
@@ -53,6 +58,12 @@ declare global {
     new (): HTMLPulseButtonElement;
   };
 
+  interface HTMLPulseFlowtmElement extends Components.PulseFlowtm, HTMLStencilElement {}
+  var HTMLPulseFlowtmElement: {
+    prototype: HTMLPulseFlowtmElement;
+    new (): HTMLPulseFlowtmElement;
+  };
+
   interface HTMLPulseFlowttElement extends Components.PulseFlowtt, HTMLStencilElement {}
   var HTMLPulseFlowttElement: {
     prototype: HTMLPulseFlowttElement;
@@ -61,11 +72,13 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'pulse-button': HTMLPulseButtonElement
+    'pulse-flowtm': HTMLPulseFlowtmElement
     'pulse-flowtt': HTMLPulseFlowttElement
   }
 
   interface ElementTagNameMap {
     'pulse-button': HTMLPulseButtonElement;
+    'pulse-flowtm': HTMLPulseFlowtmElement;
     'pulse-flowtt': HTMLPulseFlowttElement;
   }
 
