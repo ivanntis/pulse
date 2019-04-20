@@ -8,18 +8,9 @@ import { Component, Element } from '@stencil/core';
 })
 export class Pulseflowtm {
   @Element() element: HTMLElement;
-  private content: HTMLElement;
-  private head: HTMLElement;
 
   hostData() {
     return;
-  }
-
-  componentDidLoad(){
-    // console.log('this.element.clientHeight',this.element.clientHeight);
-    // console.log('window.innerHeight',window.innerHeight);
-    // console.log('this.head.offsetHeight',this.head.offsetHeight);
-    this.content.style.maxHeight = `${(window.innerHeight) - (this.head.offsetHeight+40)}px`;
   }
 
   render() {
@@ -27,12 +18,12 @@ export class Pulseflowtm {
     return (
       <div class="flowtm-main">
         <div class="flowtm-main--container pulse-grid">
-          <header class="row flowtm-main--container--header" ref={el => this.head = el as HTMLElement}> 
+          <header class="row flowtm-main--container--header"> 
             <div class="col-xs-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
               <slot name="header"></slot> 
             </div>
           </header>
-          <section id="content" class="row flowtm-main--container--content" ref={el => this.content = el as HTMLElement}>
+          <section id="content" class="row flowtm-main--container--content">
             <div class="col-xs-12 col-md-10  col-md-offset-1"> <slot name="content"></slot> </div>
           </section>
         </div>

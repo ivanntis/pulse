@@ -12,18 +12,22 @@
 
        &--header{
             padding: 0.8rem 0;
+            position: sticky;
             // background-color: pink;
-
+            top:0;
        }
        &--content{
+        
         &--summary{
-            overflow-y: scroll;
+            position: sticky;
+            // background-color: red;
+            height: 100%;
         }
-       }             
+       }     
        
     }
 
-    @media only screen and  (max-width: 480px) {
+    @media only screen and  (max-width: 540px) {
         &--container{
             // &--header{
             //     background-color: blue;
@@ -33,10 +37,11 @@
                 &--summary{
                     margin-right: calc( var(--pulse-gutter-width) * -1);
                     margin-left: calc( var(--pulse-gutter-width) * -1);
+                    width: calc(100% + calc( var(--pulse-gutter-width) * 3 ));
+                    padding-bottom: 3rem;
                 }
                }       
-        }
-        
+        }        
     }
 
     @media only screen and  (min-width: 540px) {
@@ -45,6 +50,11 @@
                 padding: 1.6rem 0;
                 // background-color: yellow;       
               }
+              &--content{
+                &--summary{
+                    padding-bottom: 3rem;
+                }
+               }       
         }
 
     }
