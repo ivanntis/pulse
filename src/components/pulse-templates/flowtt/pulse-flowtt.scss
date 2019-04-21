@@ -1,6 +1,6 @@
 .flowtt-main{
     width: 100%;
-    height: 100%;
+    height: auto;
     // background-color: green;
     display: flex;
     justify-content: center;
@@ -13,15 +13,17 @@
        &--header{
             padding: 0.8rem 0;
             position: sticky;
-            // background-color: pink;
+             background-color: var(--pulse-flowtx-header);
             top:0;
+            z-index: 999;
        }
        &--content{
         
         &--summary{
             position: sticky;
-            // background-color: red;
+            background-color: var(--pulse-flowtx-summary);
             height: 100%;
+            z-index: 998;
         }
        }     
        
