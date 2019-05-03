@@ -1,4 +1,4 @@
-import { Component, Prop, Watch } from "@stencil/core";
+import { Component, Prop, Watch, Listen, EventEmitter, Event } from "@stencil/core";
 import { Elevation, CssClassMap, Color } from '../../../interface';
 import { createColorClasses } from '../../../utils/themes';
 
@@ -19,7 +19,13 @@ export class PulseCard {
     if (!isValid) { throw new Error('invalid elevation') };
   }
 
+  @Event() cardClicked!: EventEmitter<void>;
+
   constructor() { }
+
+  onClick() {
+    this.cardClicked.emit();
+  }
 
   hostData() {
 
@@ -40,9 +46,10 @@ export class PulseCard {
 
     const attr = { class: elevationClass }
     return (
-      <div {...attr}>
+      <div {...attr}
+        onClick={this.onClick}>
         <slot></slot>
-      </div>
+      </div >
     );
   }
 }

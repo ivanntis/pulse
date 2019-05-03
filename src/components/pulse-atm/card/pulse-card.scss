@@ -1,15 +1,14 @@
 @import "pulse-card.vars";
-$temp_var: 8;
 
-:host(.pulse-color) .pc-main{
-    --bck-color:  var(--pulse-color-base);
-    color:  var(--pulse-color-constrast);
+:host(.pulse-color) .pc-main {
+    --bck-color: var(--pulse-color-base);
+    color: var(--pulse-color-constrast);
     --pulse-card-color: var(--pulse-color-shade);
-  }
-  
-.pc-main{
+}
+
+.pc-main {
     border-radius: #{$card-radius};
-    padding: #{$card-safe-area};  
+    padding: #{$card-safe-area};
     background-color: var(--bck-color, white);
     @include pulse-elevation-anim();
 }
