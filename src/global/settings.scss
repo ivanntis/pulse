@@ -1,6 +1,6 @@
 @import "./normalize";
-@import "./mixins";
 @import "./colors";
+@import "./shadows";
 
 //Fuente base para toda la aplicacion
 $font-family-base: var(--pulse-font-primary, inherit) !default;
@@ -25,3 +25,5 @@ $font-path: "/dist/fonts" !default;
     @include generate-colors($color-name);
   }
 };
+
+@include pulse-elevation(var(--pulse-card-color));
