@@ -1,8 +1,0 @@
-@mixin generate-colors($color-name) {
-  
-    --pulse-color-base: var(--pulse-color-#{$color-name}-base) !important;
-    --pulse-color-shade: var(--pulse-color-#{$color-name}-shade) !important;
-    --pulse-color-tint: var(--pulse-color-#{$color-name}-tint) !important;
-    --pulse-color-constrast: var(--pulse-color-#{$color-name}-constrast) !important;
-  };
-  

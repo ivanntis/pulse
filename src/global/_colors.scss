@@ -1,12 +1,13 @@
 /*
     Variables para paleta de colores.
   */
+  $default-opacity: .6;
   $colors: (
     primary: (
         base: #0040A8,
         constrast: #ffffff,
         tint: #0074d3,
-        shade: #0074d3,
+        shade:rgba(#0074d3, $default-opacity),
         dark: #002c76,
         grad: linear-gradient(to bottom, #0074d3, #0040A8)
     ),    
@@ -14,7 +15,7 @@
         base: #F69B31,
         constrast: #ffffff,
         tint: #FDC130,
-        shade: #FDC130,
+        shade: rgba(#FDC130, $default-opacity),
         dark: #C27A27,
         grad: linear-gradient(to bottom, #FDC130, #F69B31)
     ),
@@ -39,6 +40,7 @@
     success: (
         base: #7AD468,
         dark: #5CA14F,
+        shade: rgba(#7AD468, $default-opacity),
         constrast: #ffffff
     )
   );
@@ -88,3 +90,10 @@
     @return var(#{$variable}, $value);
   }
 
+  @mixin generate-colors($color-name) {
+  
+    --pulse-color-base: var(--pulse-color-#{$color-name}-base) !important;
+    --pulse-color-shade: var(--pulse-color-#{$color-name}-shade) !important;
+    --pulse-color-tint: var(--pulse-color-#{$color-name}-tint) !important;
+    --pulse-color-constrast: var(--pulse-color-#{$color-name}-constrast) !important;
+  };
