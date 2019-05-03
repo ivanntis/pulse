@@ -4,7 +4,7 @@ import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'Pulse',
   bundles: [
-    { components: ['pulse-button','pulse-flowtt', 'pulse-flowtm'] }
+    { components: ['pulse-button','pulse-flowtt', 'pulse-flowtm', 'pulse-card'] }
   ],
   outputTargets:[
     { type: 'dist' },
