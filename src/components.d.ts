@@ -10,6 +10,7 @@ import '@stencil/core';
 
 import {
   Color,
+  Elevation,
   Fill,
 } from './interface';
 
@@ -31,6 +32,17 @@ export namespace Components {
     'type'?: 'submit' | 'reset' | 'button';
   }
 
+  interface PulseCard {
+    'color': Color;
+    'elevation': Elevation;
+    'elevationhover': Elevation;
+  }
+  interface PulseCardAttributes extends StencilHTMLAttributes {
+    'color'?: Color;
+    'elevation'?: Elevation;
+    'elevationhover'?: Elevation;
+  }
+
   interface PulseFlowtm {}
   interface PulseFlowtmAttributes extends StencilHTMLAttributes {}
 
@@ -41,12 +53,14 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'PulseButton': Components.PulseButton;
+    'PulseCard': Components.PulseCard;
     'PulseFlowtm': Components.PulseFlowtm;
     'PulseFlowtt': Components.PulseFlowtt;
   }
 
   interface StencilIntrinsicElements {
     'pulse-button': Components.PulseButtonAttributes;
+    'pulse-card': Components.PulseCardAttributes;
     'pulse-flowtm': Components.PulseFlowtmAttributes;
     'pulse-flowtt': Components.PulseFlowttAttributes;
   }
@@ -56,6 +70,12 @@ declare global {
   var HTMLPulseButtonElement: {
     prototype: HTMLPulseButtonElement;
     new (): HTMLPulseButtonElement;
+  };
+
+  interface HTMLPulseCardElement extends Components.PulseCard, HTMLStencilElement {}
+  var HTMLPulseCardElement: {
+    prototype: HTMLPulseCardElement;
+    new (): HTMLPulseCardElement;
   };
 
   interface HTMLPulseFlowtmElement extends Components.PulseFlowtm, HTMLStencilElement {}
@@ -72,12 +92,14 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'pulse-button': HTMLPulseButtonElement
+    'pulse-card': HTMLPulseCardElement
     'pulse-flowtm': HTMLPulseFlowtmElement
     'pulse-flowtt': HTMLPulseFlowttElement
   }
 
   interface ElementTagNameMap {
     'pulse-button': HTMLPulseButtonElement;
+    'pulse-card': HTMLPulseCardElement;
     'pulse-flowtm': HTMLPulseFlowtmElement;
     'pulse-flowtt': HTMLPulseFlowttElement;
   }
