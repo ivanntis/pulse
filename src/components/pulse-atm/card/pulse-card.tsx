@@ -19,13 +19,7 @@ export class PulseCard {
     if (!isValid) { throw new Error('invalid elevation') };
   }
 
-  @Event() cardClicked!: EventEmitter<void>;
-
   constructor() { }
-
-  onClick() {
-    this.cardClicked.emit();
-  }
 
   hostData() {
 
@@ -46,8 +40,7 @@ export class PulseCard {
 
     const attr = { class: elevationClass }
     return (
-      <div {...attr}
-        onClick={this.onClick}>
+      <div {...attr}>
         <slot></slot>
       </div >
     );
