@@ -41,7 +41,6 @@ export namespace Components {
     'color'?: Color;
     'elevation'?: Elevation;
     'elevationhover'?: Elevation;
-    'onCardClicked'?: (event: CustomEvent<void>) => void;
   }
 
   interface PulseFlowtm {}
