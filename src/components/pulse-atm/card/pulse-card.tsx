@@ -1,4 +1,4 @@
-import { Component, Prop, Watch, EventEmitter, Event } from "@stencil/core";
+import { Component, Prop, Watch } from "@stencil/core";
 import { Elevation, CssClassMap, Color } from '../../../interface';
 import { createColorClasses } from '../../../utils/themes';
 
