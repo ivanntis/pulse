@@ -19,6 +19,7 @@ Siempre estamos dispuestos a recibir todas sus contribuciones para hacer de `pul
 ## <a name="rdc"></a> Reglas de Codificacion
 ## <a name="gcm"></a> Guia de Commit Message
 https://www.conventionalcommits.org/en/v1.0.0-beta.4/
+https://github.com/conventional-changelog/standard-version
 ## <a name="cla"></a> Firmando el CLA
 
 
