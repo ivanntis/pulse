@@ -1,7 +1,7 @@
 {
   "name": "@pulse.io/components",
   "version": "0.8.0",
-  "description": "Pulse.io Design System Components",
+  "description": "Pulse.IO Design System Components",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "unpkg": "dist/ionic.js",
