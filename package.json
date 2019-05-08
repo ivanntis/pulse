@@ -1,6 +1,6 @@
 {
   "name": "@pulse.io/components",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Pulse.IO Design System Components",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",

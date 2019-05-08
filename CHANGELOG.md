@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.4](https://github.com/ivanntis/pulse/compare/v0.8.3...v0.8.4) (2019-05-08)
+
+
+### Bug Fixes
+
+* **template:** mi prueba templates ([9290fa9](https://github.com/ivanntis/pulse/commit/9290fa9))
+* **template:** mi prueba templates 2 ([0f33c77](https://github.com/ivanntis/pulse/commit/0f33c77))
+* **template:** mi prueba templates 3 ([977a044](https://github.com/ivanntis/pulse/commit/977a044))
+
+
+
 ### [0.8.3](https://github.com/ivanntis/pulse/compare/v0.8.2...v0.8.3) (2019-05-08)
 
 
