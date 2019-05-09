@@ -47,7 +47,7 @@ Siempre estamos dispuestos a recibir todas sus contribuciones para hacer de `pul
 
 #### Nombramiento de componentes
 
-#####  html tag
+##### html tag
 
 **Prefijo** Todos los componentes van a inciar con _pulse-_
 **Nombre** Los nombres deben ser claro y dene indicar conceptualmente un objeto, no debe utilzar verbor. 

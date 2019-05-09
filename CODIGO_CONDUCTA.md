@@ -34,12 +34,14 @@ Animamos a todos a participar y estamos comprometidos a construir una comunidad 
 Aunque esta lista no puede ser exhaustiva, reconocemos explícitamente la diversidad en edad, género, identidad o expresión de género, cultura, etnia, idioma, origen nacional, creencias políticas, profesión, raza, religión, orientación sexual, nivel socioeconómico y capacidad técnica. No toleraremos la discriminación basada en ninguna de las características protegidas anteriores, incluidos los participantes con discapacidades.
 
 ## Reportando incidencias.
-Si experimentas o eres testigo de un comportamiento inaceptable "o tienes otra cuestión" por favor reportarlo poniéndose en contacto con nosotros via xxxx@xxxxxxx.xxx. Todos los reportes serán tratados con discreción.
+
+Si experimentas o eres testigo de un comportamiento inaceptable "o tienes otra cuestión" por favor reportarlo poniéndose en contacto con nosotros via ivan.pena@avaldigitallabs.com Todos los reportes serán tratados con discreción.
 Por favor incluir en el reporte:
-  * Información de contacto.
-  * Nombre(Real/Nickname) de todos los involucrados y si hay testigos también.
-  * Descripción de lo ocurrido y si el incidente está en curso.
-  * Registro o evidencia disponible.
+
+* Información de contacto.
+* Nombre(Real/Nickname) de todos los involucrados y si hay testigos también.
+* Descripción de lo ocurrido y si el incidente está en curso.
+* Registro o evidencia disponible.
 
 Después de presentar un informe, un representante se pondrá en contacto con usted personalmente, revisará el incidente, dará seguimiento a cualquier pregunta adicional y tomará una decisión sobre cómo responder. Si la persona que lo está acosando es parte del equipo de respuesta, se abstendrán de manejar su incidente. Si la queja proviene de un miembro del equipo de respuesta, será manejada por un miembro diferente del equipo de respuesta. Respetaremos las solicitudes de confidencialidad con el fin de proteger a las víctimas de abuso.
 
