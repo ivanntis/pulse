@@ -10,7 +10,9 @@ Siempre estamos dispuestos a recibir todas sus contribuciones para hacer de `pul
 - [Guia de Commit Message](#gcm)
 - [Firmando el CLA](#cla)
 
-## <a name="coc"></a> Codigo de Conducta
+## <a name="coc"> Codigo de Conducta </a>
+
+  [Codigo] (https://github.com/ivanntis/pulse/blob/master/CODIGO_CONDUCTA.md)
 ## <a name="snc"></a> Solicitud Nuevas Caracteristicas
 ## <a name="i&b"></a> Reportar Issues & Bugs
 

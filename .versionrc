@@ -6,5 +6,6 @@
     {"type":"test","section":"Tests", "hidden": true},
     {"type":"build","section":"Build System", "hidden": true},
     {"type":"ci","hidden":true}
+    {"type":"doc","hidden":true}
   ]
 }
