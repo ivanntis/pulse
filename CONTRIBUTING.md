@@ -39,7 +39,7 @@ Siempre estamos dispuestos a recibir todas sus contribuciones para hacer de `pul
 > > > >
 > > > > pulse-button.vars.scss
 > 
-> > -pulse-template
+> > pulse-template
 > > > flowtt
 > > > > pulse-flowtt.tsx
 > > > >
@@ -49,12 +49,15 @@ Siempre estamos dispuestos a recibir todas sus contribuciones para hacer de `pul
 
 #####  html tag
 
-**Prefijo** todos los componentes van a inciar con _pulse-_
-**Nombre** los nombres deben ser claro y dene indicar conceptualmente un objeto, no debe utilzar verbor. 
+**Prefijo** Todos los componentes van a inciar con _pulse-_
+**Nombre** Los nombres deben ser claro y dene indicar conceptualmente un objeto, no debe utilzar verbor. 
 
 ##### TS
 
-Utilizamos el estandar ES6, No debe tener prefijos y comiensan Con la Plabra Pulse.
+Utilizamos el estandar ES6, No debe tener prefijos y comiensan con la palabra Pulse.
+
+*Ejemplo:*
+
 ```ts
 @Component({
   tag: 'pulse-button'
