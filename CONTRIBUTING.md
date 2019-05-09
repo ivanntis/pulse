@@ -18,14 +18,58 @@ Siempre estamos dispuestos a recibir todas sus contribuciones para hacer de `pul
 
 ## <a name="i&b"></a> Reportar Issues & Bugs
 
-### <a name="apr"></a> Aportando Codigo / Pull Request
+## <a name="apr"></a> Aportando Codigo / Pull Request
   
 ## <a name="rdc"></a> Reglas de Codificacion
 
+### Guia de estilo __PULSE.IO__
+
+#### Estructura de archivos:
+
+- Un componente por archivo.
+- Un componente por Directorio. El directorio debe tener el nombre explicito de lo que hace el componente.
+
+> components
+> 
+> > pulse-atm
+> > > button
+> > > > pulse-button.tsx
+> > > >
+> > > > pulse-button.scss
+> > > >
+> > > > pulse-button.vars.scss
+> 
+> > -pulse-template
+> > > flowtt
+> > > > pulse-flowtt.tsx
+> > > >
+> > > > pulse-flowtt.scss
+
+#### Nombramiento de componentes
+
+#####  html tag
+
+**Prefijo** todos los componentes van a inciar con _pulse-_
+**Nombre** los nombres deben ser claro y dene indicar conceptualmente un objeto, no debe utilzar verbor. 
+
+##### TS
+
+Utilizamos el estandar ES6, No debe tener prefijos y comiensan Con la Plabra Pulse.
+```ts
+@Component({
+  tag: 'pulse-button'
+})
+export class PulseButton { ... }
+
+```
+
+ **css/sass** -> El estandar seleccionado para la creacion de estilos y nombramiento de clases es [BEM](http://getbem.com/)
+
+ **ts** -> El lenguaje base es Typescript, por lo cual se valida con [TSLint](https://palantir.github.io/tslint/)
 
 ## <a name="gcm">Guia de Commit Message</a>
 
-Convención simple para dar formato a los mensages que se agregan cada vez que se realiza un commit, el cual nos permite crear reglas sencillas que nos permiten tener organizado el historico del proyecto, adicionalmente con este estandar podemos automatizar la generacion de versiones "__PULSE.IO__ tiliza [SemVer](https://semver.org/)".
+Convención simple para dar formato a los mensages que se agregan cada vez que se realiza un commit, el cual nos permite crear reglas sencillas que nos permiten tener organizado el historico del proyecto, adicionalmente con este estandar podemos automatizar la generacion de versiones "__PULSE.IO__ utiliza [SemVer](https://semver.org/)".
 
 La guia completa que utiliza __PULSE.IO__ como estandar para los mensages es [Convetional Commit](https://www.conventionalcommits.org/en/v1.0.0-beta.4)
 
